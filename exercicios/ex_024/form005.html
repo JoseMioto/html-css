@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário</title>
     <style>
-        *{
+             *{
             font-family: Arial, Helvetica, sans-serif;
             background-color:rgb(34, 34, 34);
             color: aliceblue;
@@ -32,32 +32,46 @@
             color: black;
             transition: 0.8s;
         }
-
-        legend{
-           color: rgb(101, 129, 148);
-        }
-
-        fieldset{
-           background-color:rgba(0, 0, 0, 0.5); 
-        }
     </style>
 </head>
 <body>
-    <form action="cadastro.php" method="get" autocomplete="off">
+    <form action="cadastro.php" method="get" autocomplete="on">
+
+        <fieldset> 
+            <legend>Sexo</legend>
+
+            <p>
+                <label for="imas">Masculino</label>
+                <input type="radio" name="sexo" id="imas" checked>
+            </p>
+    
+            <p>
+                <label for="ifem">Feminino</label>
+                <input type="radio" name="sexo" id="ifem">
+            </p>
+        </fieldset><br>
 
         <fieldset>
-            <legend>Dados pessoais</legend>
+            <legend>Lista de Compras</legend>
+
             <p>
-                <label for="inome">Nome</label>
-                <input type="text" name="nome" id="inome" readonly>
+                <label for="icad">Cadeira</label>
+                <input type="checkbox" name="cadeira" id="icad" checked>
             </p>
+    
             <p>
-                <label for="iemail">E-mail</label>
-                <input type="email" name="email" id="iemail"  autocomplete="email" placeholder="(Email)@gmail.com" readonly>
+                <label for="iluva">Luva</label>
+                <input type="checkbox" name="luva" id="iluva">
             </p>
+    
             <p>
-                <label for="itel">Telefone</label>
-                <input type="tel" name="telefone" id="itel" required pattern="^\(d{2}\)\d{4,5}-\d{4}$">
+                <label for="ibola">Bola</label>
+                <input type="checkbox" name="bola" id="ibola" checked>
+            </p>
+    
+            <p>
+                <label for="ichinelo">Chinelo</label>
+                <input type="checkbox" name="chinelo" id="ichinelo">
             </p>
         </fieldset>
 
