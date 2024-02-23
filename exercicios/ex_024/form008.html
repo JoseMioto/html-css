@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        *{
+       font-family: Arial, Helvetica, sans-serif;
+       background-color:rgb(34, 34, 34);
+       color: aliceblue;
+       
+   }
+
+   h1{
+       color: rgb(2, 192, 2);
+   }
+
+   input{
+       background-color: rgba(28, 100, 148, 0.5);
+       border-radius: 5px;
+       
+   }
+
+   .botao{
+       cursor: pointer;
+       box-shadow: 1px 1px 1px black;
+   }
+   .botao:hover{
+       cursor: pointer;
+       background-color: aqua;
+       color: black;
+       transition: 0.8s;
+   }
+
+</style>
+</head>
+<body>
+    <form action="cadastro.php" method="get">
+        <p>
+            <label for="in1">Número 1: </label>
+            <input type="number" name="numero1" id="in1" min="0" max="50" required oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)">
+        </p>
+
+        <p>
+            <label for="in2">Número 2: </label>
+            <input type="number" name="numero2" id="in2"  min="0" max="50" required oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)">
+        </p>
+
+        <p>
+            <label for="isoma">Soma: </label>
+            <output name="soma" id="isoma">0</output>
+        </p>
+
+        <p>
+            <input class="botao" type="submit" value="Enviar">
+            <input  class="botao" type="reset" value="limpar">
+        </p>
+    </form>
+</body>
+</html>
