@@ -31,7 +31,7 @@ body{
 }
 
 header{
-    background-color: #38328f;
+    background-color: #1f202c;
 
 }
 
@@ -41,8 +41,23 @@ header > h1{
     margin: auto;
 }
 
-menu{
+#burguer{
+    color: white;
     display: block;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+    background-color: 1f202c;
+}
+
+#burguer:hover{
+    color: yellowgreen;
+    background-color: rgb(11, 54, 54);
+
+}
+
+menu{
+    display: none;
 }
 
 menu > ul{
@@ -60,7 +75,7 @@ menu a{
 }
 
 menu a:hover{
-   color: rgb(168, 223, 58);
+   color: rgb(0, 0, 0);
    background-color: #7eacc7;
 }
 
